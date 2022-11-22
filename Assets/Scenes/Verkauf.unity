@@ -1580,6 +1580,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379703374}
   m_Mesh: {fileID: -1469889473521292513, guid: d9d03ab40807ae24fa436a43d9f3b5b3, type: 3}
+--- !u!1 &415401911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6bc9bd2834c994245845178cc95f9233,
+    type: 3}
+  m_PrefabInstance: {fileID: 1875700543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &419419806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2920,6 +2926,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3434c0b847ea9854cbf6ca7ed69f8a4c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999976
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3434c0b847ea9854cbf6ca7ed69f8a4c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99999976
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3434c0b847ea9854cbf6ca7ed69f8a4c,
         type: 3}
@@ -5704,7 +5720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258439217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.999, y: 0.715, z: 1.9523}
+  m_LocalPosition: {x: -0.999, y: 0.715, z: 6.25}
   m_LocalScale: {x: 9.230586, y: 0.071, z: 5.172992}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8290,6 +8306,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757598854}
   m_Mesh: {fileID: -6827640314013697367, guid: d9d03ab40807ae24fa436a43d9f3b5b3, type: 3}
+--- !u!1 &1763640460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3434c0b847ea9854cbf6ca7ed69f8a4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 619627782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1763640463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763640460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8319691, y: 0.7880049, z: 0.7738962}
+  m_Center: {x: -0.008700911, y: -0.015944555, z: 0.051314797}
 --- !u!1001 &1784402147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8856,6 +8891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SportsBottle_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6bc9bd2834c994245845178cc95f9233, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bc9bd2834c994245845178cc95f9233, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -8878,7 +8917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bc9bd2834c994245845178cc95f9233, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.407
+      value: -0.402
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bc9bd2834c994245845178cc95f9233, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8920,6 +8959,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1875700543}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1875700547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415401911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8635508, y: 6.6851597, z: 1.8635497}
+  m_Center: {x: -0.000009834766, y: 3.3390594, z: 0.00000756979}
+--- !u!54 &1875700548
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415401911}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1001 &1884054785
 PrefabInstance:
   m_ObjectHideFlags: 0
