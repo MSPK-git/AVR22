@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bicycle
+  - Wheel
+  - Handle
+  - Seat
+  - Gear
+  - HandController
   layers:
   - Default
   - TransparentFX
@@ -15,11 +21,11 @@ TagManager:
   - RightHandLayer
   - Left Hand Physics
   - Right Hand Physics
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bike Frame
+  - Bike Attachments
+  - GrabButNoBikePart
+  - interactable
+  - noninteractable
   - 
   - 
   - 
