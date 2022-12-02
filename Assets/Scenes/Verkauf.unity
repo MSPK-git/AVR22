@@ -11425,6 +11425,7 @@ GameObject:
   - component: {fileID: 2211297642996206733}
   - component: {fileID: 2963299185744249640}
   - component: {fileID: 1079517701043222498}
+  - component: {fileID: 2963299185744249641}
   m_Layer: 0
   m_Name: Large corner shelf
   m_TagString: Untagged
@@ -11611,6 +11612,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584083792958772791}
   m_Mesh: {fileID: -8522191583397903598, guid: 855de4ea21d5fe2428038de2e0d0371f, type: 3}
+--- !u!65 &2963299185744249641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584083792958772791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04697106, y: 3.1160846, z: 0.637828}
+  m_Center: {x: 0.07575775, y: 0.37805778, z: -0.042204015}
 --- !u!1 &2993424688493663951
 GameObject:
   m_ObjectHideFlags: 0
