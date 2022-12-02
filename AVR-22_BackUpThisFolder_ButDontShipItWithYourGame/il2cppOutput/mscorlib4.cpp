@@ -198,6 +198,7 @@ IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DA
 IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57_il2cpp_TypeInfo_var;
@@ -405,6 +406,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Span_1_get_Length_m8E944E4954E037877A25B9FF
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_get_Length_mB79622153F80AD55A805C005842AF045F4FCF992_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_op_Implicit_m03D0CEDC1BC95844236105D1DE24A702B956BFE4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_op_Implicit_m75103E0CA16D9EEB5414F2FA9611149122CF23CC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_op_Implicit_mA0E9FDCF2C5113BA9F9C4964D17D8BDFBD6F3C98_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Char_t521A6F19B456D956AF452D926C32709DC03D6B17_0_0_0_var;
@@ -2446,6 +2448,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Span_1__ctor_mE18EBB601FBFA0
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Span_1_get_Length_m8E944E4954E037877A25B9FF6B901F1F901D4769_gshared_inline (Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305* __this, const RuntimeMethod* method) ;
 // System.Void System.ReadOnlySpan`1<System.Char>::.ctor(T[],System.Int32,System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ReadOnlySpan_1__ctor_mDADE08E6B4594775C6675B389078E5FE98C745D5_gshared_inline (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___array0, int32_t ___start1, int32_t ___length2, const RuntimeMethod* method) ;
+// System.Span`1<T> System.Span`1<System.Byte>::op_Implicit(T[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91_gshared (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___array0, const RuntimeMethod* method) ;
 // System.Void System.Span`1<System.Char>::.ctor(System.Void*,System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Span_1__ctor_m835590E344B05AF6AF00A78E92C4175BD781A3D2_gshared_inline (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D* __this, void* ___pointer0, int32_t ___length1, const RuntimeMethod* method) ;
 // System.Int32 System.Span`1<System.Char>::get_Length()
@@ -2593,6 +2597,8 @@ inline int32_t ReadOnlySpan_1_get_Length_m54864A0BB817050A9110E85BB5FB31EF636999
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SR_Format_m9E8DC9AEFDC34AC67473EFAEAB78C5066C1A0D09 (String_t* ___resourceFormat0, RuntimeObject* ___p11, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, String_t* ___paramName1, const RuntimeMethod* method) ;
+// System.Void System.Guid::.ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Guid__ctor_m124D0C0C7E661194DA48CA77B878BF15F6D83871 (Guid_t* __this, uint32_t ___a0, uint16_t ___b1, uint16_t ___c2, uint8_t ___d3, uint8_t ___e4, uint8_t ___f5, uint8_t ___g6, uint8_t ___h7, uint8_t ___i8, uint8_t ___j9, uint8_t ___k10, const RuntimeMethod* method) ;
 // System.Void System.Guid::.ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Guid__ctor_mC52E0191E06C110F9F6E0A417BCA4437D79CC130 (Guid_t* __this, int32_t ___a0, int16_t ___b1, int16_t ___c2, uint8_t ___d3, uint8_t ___e4, uint8_t ___f5, uint8_t ___g6, uint8_t ___h7, uint8_t ___i8, uint8_t ___j9, uint8_t ___k10, const RuntimeMethod* method) ;
 // System.Void System.Guid/GuidResult::Init(System.Guid/GuidParseThrowStyle)
@@ -2669,6 +2675,15 @@ inline void ReadOnlySpan_1__ctor_mDADE08E6B4594775C6675B389078E5FE98C745D5_inlin
 }
 // System.Char System.Char::ToLowerInvariant(System.Char)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Char_ToLowerInvariant_m983C1CD07015E41B97D71F466B4B686F1145E60D (Il2CppChar ___c0, const RuntimeMethod* method) ;
+// System.Void System.Guid::WriteByteHelper(System.Span`1<System.Byte>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Guid_WriteByteHelper_m01C68A14A0E960E3D2FC97C2178166CA0898481E_inline (Guid_t* __this, Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 ___destination0, const RuntimeMethod* method) ;
+// System.Span`1<T> System.Span`1<System.Byte>::op_Implicit(T[])
+inline Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___array0, const RuntimeMethod* method)
+{
+	return ((  Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 (*) (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, const RuntimeMethod*))Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91_gshared)(___array0, method);
+}
+// System.Byte[] System.Guid::ToByteArray()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Guid_ToByteArray_m6EBFB2F42D3760D9143050A3A8ED03F085F3AFE9 (Guid_t* __this, const RuntimeMethod* method) ;
 // System.String System.Guid::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Guid_ToString_mD2A93BCA0CBFABB680A93A8FA668AD90E7B56130 (Guid_t* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method) ;
 // System.String System.Guid::ToString()
@@ -5978,6 +5993,42 @@ IL2CPP_EXTERN_C  void Guid__ctor_m6533072DFD3E81582E8949EB2D5BFABEFC7C403D_Adjus
 	_thisAdjusted = reinterpret_cast<Guid_t*>(__this + _offset);
 	Guid__ctor_m6533072DFD3E81582E8949EB2D5BFABEFC7C403D(_thisAdjusted, ___b0, method);
 }
+// System.Void System.Guid::.ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Guid__ctor_m124D0C0C7E661194DA48CA77B878BF15F6D83871 (Guid_t* __this, uint32_t ___a0, uint16_t ___b1, uint16_t ___c2, uint8_t ___d3, uint8_t ___e4, uint8_t ___f5, uint8_t ___g6, uint8_t ___h7, uint8_t ___i8, uint8_t ___j9, uint8_t ___k10, const RuntimeMethod* method) 
+{
+	{
+		uint32_t L_0 = ___a0;
+		__this->____a_1 = L_0;
+		uint16_t L_1 = ___b1;
+		__this->____b_2 = ((int16_t)L_1);
+		uint16_t L_2 = ___c2;
+		__this->____c_3 = ((int16_t)L_2);
+		uint8_t L_3 = ___d3;
+		__this->____d_4 = L_3;
+		uint8_t L_4 = ___e4;
+		__this->____e_5 = L_4;
+		uint8_t L_5 = ___f5;
+		__this->____f_6 = L_5;
+		uint8_t L_6 = ___g6;
+		__this->____g_7 = L_6;
+		uint8_t L_7 = ___h7;
+		__this->____h_8 = L_7;
+		uint8_t L_8 = ___i8;
+		__this->____i_9 = L_8;
+		uint8_t L_9 = ___j9;
+		__this->____j_10 = L_9;
+		uint8_t L_10 = ___k10;
+		__this->____k_11 = L_10;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void Guid__ctor_m124D0C0C7E661194DA48CA77B878BF15F6D83871_AdjustorThunk (RuntimeObject* __this, uint32_t ___a0, uint16_t ___b1, uint16_t ___c2, uint8_t ___d3, uint8_t ___e4, uint8_t ___f5, uint8_t ___g6, uint8_t ___h7, uint8_t ___i8, uint8_t ___j9, uint8_t ___k10, const RuntimeMethod* method)
+{
+	Guid_t* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<Guid_t*>(__this + _offset);
+	Guid__ctor_m124D0C0C7E661194DA48CA77B878BF15F6D83871(_thisAdjusted, ___a0, ___b1, ___c2, ___d3, ___e4, ___f5, ___g6, ___h7, ___i8, ___j9, ___k10, method);
+}
 // System.Void System.Guid::.ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Guid__ctor_mC52E0191E06C110F9F6E0A417BCA4437D79CC130 (Guid_t* __this, int32_t ___a0, int16_t ___b1, int16_t ___c2, uint8_t ___d3, uint8_t ___e4, uint8_t ___f5, uint8_t ___g6, uint8_t ___h7, uint8_t ___i8, uint8_t ___j9, uint8_t ___k10, const RuntimeMethod* method) 
 {
@@ -8045,6 +8096,115 @@ IL_003f:
 	{
 		return (bool)0;
 	}
+}
+// System.Void System.Guid::WriteByteHelper(System.Span`1<System.Byte>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Guid_WriteByteHelper_m01C68A14A0E960E3D2FC97C2178166CA0898481E (Guid_t* __this, Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 ___destination0, const RuntimeMethod* method) 
+{
+	{
+		uint8_t* L_0;
+		L_0 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (0), ((&___destination0))->____length_1);
+		int32_t L_1 = __this->____a_1;
+		*((int8_t*)L_0) = (int8_t)((int32_t)(uint8_t)L_1);
+		uint8_t* L_2;
+		L_2 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (1), ((&___destination0))->____length_1);
+		int32_t L_3 = __this->____a_1;
+		*((int8_t*)L_2) = (int8_t)((int32_t)(uint8_t)((int32_t)(L_3>>8)));
+		uint8_t* L_4;
+		L_4 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (2), ((&___destination0))->____length_1);
+		int32_t L_5 = __this->____a_1;
+		*((int8_t*)L_4) = (int8_t)((int32_t)(uint8_t)((int32_t)(L_5>>((int32_t)16))));
+		uint8_t* L_6;
+		L_6 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (3), ((&___destination0))->____length_1);
+		int32_t L_7 = __this->____a_1;
+		*((int8_t*)L_6) = (int8_t)((int32_t)(uint8_t)((int32_t)(L_7>>((int32_t)24))));
+		uint8_t* L_8;
+		L_8 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (4), ((&___destination0))->____length_1);
+		int16_t L_9 = __this->____b_2;
+		*((int8_t*)L_8) = (int8_t)((int32_t)(uint8_t)L_9);
+		uint8_t* L_10;
+		L_10 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (5), ((&___destination0))->____length_1);
+		int16_t L_11 = __this->____b_2;
+		*((int8_t*)L_10) = (int8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_11>>8)));
+		uint8_t* L_12;
+		L_12 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (6), ((&___destination0))->____length_1);
+		int16_t L_13 = __this->____c_3;
+		*((int8_t*)L_12) = (int8_t)((int32_t)(uint8_t)L_13);
+		uint8_t* L_14;
+		L_14 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (7), ((&___destination0))->____length_1);
+		int16_t L_15 = __this->____c_3;
+		*((int8_t*)L_14) = (int8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_15>>8)));
+		uint8_t* L_16;
+		L_16 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (8), ((&___destination0))->____length_1);
+		uint8_t L_17 = __this->____d_4;
+		*((int8_t*)L_16) = (int8_t)L_17;
+		uint8_t* L_18;
+		L_18 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)9)), ((&___destination0))->____length_1);
+		uint8_t L_19 = __this->____e_5;
+		*((int8_t*)L_18) = (int8_t)L_19;
+		uint8_t* L_20;
+		L_20 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)10)), ((&___destination0))->____length_1);
+		uint8_t L_21 = __this->____f_6;
+		*((int8_t*)L_20) = (int8_t)L_21;
+		uint8_t* L_22;
+		L_22 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)11)), ((&___destination0))->____length_1);
+		uint8_t L_23 = __this->____g_7;
+		*((int8_t*)L_22) = (int8_t)L_23;
+		uint8_t* L_24;
+		L_24 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)12)), ((&___destination0))->____length_1);
+		uint8_t L_25 = __this->____h_8;
+		*((int8_t*)L_24) = (int8_t)L_25;
+		uint8_t* L_26;
+		L_26 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)13)), ((&___destination0))->____length_1);
+		uint8_t L_27 = __this->____i_9;
+		*((int8_t*)L_26) = (int8_t)L_27;
+		uint8_t* L_28;
+		L_28 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)14)), ((&___destination0))->____length_1);
+		uint8_t L_29 = __this->____j_10;
+		*((int8_t*)L_28) = (int8_t)L_29;
+		uint8_t* L_30;
+		L_30 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)15)), ((&___destination0))->____length_1);
+		uint8_t L_31 = __this->____k_11;
+		*((int8_t*)L_30) = (int8_t)L_31;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void Guid_WriteByteHelper_m01C68A14A0E960E3D2FC97C2178166CA0898481E_AdjustorThunk (RuntimeObject* __this, Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 ___destination0, const RuntimeMethod* method)
+{
+	Guid_t* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<Guid_t*>(__this + _offset);
+	Guid_WriteByteHelper_m01C68A14A0E960E3D2FC97C2178166CA0898481E_inline(_thisAdjusted, ___destination0, method);
+}
+// System.Byte[] System.Guid::ToByteArray()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Guid_ToByteArray_m6EBFB2F42D3760D9143050A3A8ED03F085F3AFE9 (Guid_t* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16));
+		V_0 = L_0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = V_0;
+		Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 L_2;
+		L_2 = Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91(L_1, Span_1_op_Implicit_m8619157C8809464A173FF531960A75A0ACE2CE91_RuntimeMethod_var);
+		Guid_WriteByteHelper_m01C68A14A0E960E3D2FC97C2178166CA0898481E_inline(__this, L_2, NULL);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = V_0;
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C  ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Guid_ToByteArray_m6EBFB2F42D3760D9143050A3A8ED03F085F3AFE9_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	Guid_t* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<Guid_t*>(__this + _offset);
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* _returnValue;
+	_returnValue = Guid_ToByteArray_m6EBFB2F42D3760D9143050A3A8ED03F085F3AFE9(_thisAdjusted, method);
+	return _returnValue;
 }
 // System.String System.Guid::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C (Guid_t* __this, const RuntimeMethod* method) 
@@ -32346,6 +32506,76 @@ IL_000d:
 		memset((&L_6), 0, sizeof(L_6));
 		ReadOnlySpan_1__ctor_m0152E50B40750679B83FF9F30CA539FFBB98EEE8_inline((&L_6), L_3, L_5, /*hidden argument*/ReadOnlySpan_1__ctor_m0152E50B40750679B83FF9F30CA539FFBB98EEE8_RuntimeMethod_var);
 		return L_6;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Guid_WriteByteHelper_m01C68A14A0E960E3D2FC97C2178166CA0898481E_inline (Guid_t* __this, Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 ___destination0, const RuntimeMethod* method) 
+{
+	{
+		uint8_t* L_0;
+		L_0 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (0), ((&___destination0))->____length_1);
+		int32_t L_1 = __this->____a_1;
+		*((int8_t*)L_0) = (int8_t)((int32_t)(uint8_t)L_1);
+		uint8_t* L_2;
+		L_2 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (1), ((&___destination0))->____length_1);
+		int32_t L_3 = __this->____a_1;
+		*((int8_t*)L_2) = (int8_t)((int32_t)(uint8_t)((int32_t)(L_3>>8)));
+		uint8_t* L_4;
+		L_4 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (2), ((&___destination0))->____length_1);
+		int32_t L_5 = __this->____a_1;
+		*((int8_t*)L_4) = (int8_t)((int32_t)(uint8_t)((int32_t)(L_5>>((int32_t)16))));
+		uint8_t* L_6;
+		L_6 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (3), ((&___destination0))->____length_1);
+		int32_t L_7 = __this->____a_1;
+		*((int8_t*)L_6) = (int8_t)((int32_t)(uint8_t)((int32_t)(L_7>>((int32_t)24))));
+		uint8_t* L_8;
+		L_8 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (4), ((&___destination0))->____length_1);
+		int16_t L_9 = __this->____b_2;
+		*((int8_t*)L_8) = (int8_t)((int32_t)(uint8_t)L_9);
+		uint8_t* L_10;
+		L_10 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (5), ((&___destination0))->____length_1);
+		int16_t L_11 = __this->____b_2;
+		*((int8_t*)L_10) = (int8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_11>>8)));
+		uint8_t* L_12;
+		L_12 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (6), ((&___destination0))->____length_1);
+		int16_t L_13 = __this->____c_3;
+		*((int8_t*)L_12) = (int8_t)((int32_t)(uint8_t)L_13);
+		uint8_t* L_14;
+		L_14 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (7), ((&___destination0))->____length_1);
+		int16_t L_15 = __this->____c_3;
+		*((int8_t*)L_14) = (int8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_15>>8)));
+		uint8_t* L_16;
+		L_16 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (8), ((&___destination0))->____length_1);
+		uint8_t L_17 = __this->____d_4;
+		*((int8_t*)L_16) = (int8_t)L_17;
+		uint8_t* L_18;
+		L_18 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)9)), ((&___destination0))->____length_1);
+		uint8_t L_19 = __this->____e_5;
+		*((int8_t*)L_18) = (int8_t)L_19;
+		uint8_t* L_20;
+		L_20 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)10)), ((&___destination0))->____length_1);
+		uint8_t L_21 = __this->____f_6;
+		*((int8_t*)L_20) = (int8_t)L_21;
+		uint8_t* L_22;
+		L_22 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)11)), ((&___destination0))->____length_1);
+		uint8_t L_23 = __this->____g_7;
+		*((int8_t*)L_22) = (int8_t)L_23;
+		uint8_t* L_24;
+		L_24 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)12)), ((&___destination0))->____length_1);
+		uint8_t L_25 = __this->____h_8;
+		*((int8_t*)L_24) = (int8_t)L_25;
+		uint8_t* L_26;
+		L_26 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)13)), ((&___destination0))->____length_1);
+		uint8_t L_27 = __this->____i_9;
+		*((int8_t*)L_26) = (int8_t)L_27;
+		uint8_t* L_28;
+		L_28 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)14)), ((&___destination0))->____length_1);
+		uint8_t L_29 = __this->____j_10;
+		*((int8_t*)L_28) = (int8_t)L_29;
+		uint8_t* L_30;
+		L_30 = il2cpp_span_get_item((uint8_t*)((Il2CppByReference*)&(((&___destination0))->____pointer_0))->value, (((int32_t)15)), ((&___destination0))->____length_1);
+		uint8_t L_31 = __this->____k_11;
+		*((int8_t*)L_30) = (int8_t)L_31;
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppChar Guid_HexToChar_mBA9068B41C7375C0B48FAC9F543DF59ECE37C31F_inline (int32_t ___a0, const RuntimeMethod* method) 
