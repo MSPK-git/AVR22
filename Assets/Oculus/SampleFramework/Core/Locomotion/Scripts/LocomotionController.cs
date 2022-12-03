@@ -12,6 +12,7 @@ using UnityEngine;
 using System.Collections;
 using JetBrains.Annotations;
 using UnityEngine.Assertions;
+using UnityEngine.XR.Interaction.Toolkit;
 #if UNITY_EDITOR
 using UnityEngine.SceneManagement;
 #endif
@@ -26,6 +27,23 @@ public class LocomotionController : MonoBehaviour
     public CapsuleCollider CharacterController;
 	//public OVRPlayerController PlayerController;
 	public SimpleCapsuleWithStickMovement PlayerController;
+
+    public XRController rightTeleportRay;
+    public InputHelpers.Button teleportActivationButton;
+    public float activeationThreshold = 0.1f;
+
+    public bool CheckIfActiveated(XRController controller) {
+        InputHelpers.IsPressed(controller.inputDevice, teleportActivationButton, out bool isActivated, activeationThreshold);
+        return isActivated;
+    }
+
+    void Update()
+    {
+        if (rightTeleportRay) {
+            rightTeleportRay.gameObject.SetActive(CheckIfActiveated(rightTeleportRay));
+        }
+           
+    }
 
     void Start()
     {
