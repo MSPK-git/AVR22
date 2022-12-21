@@ -39,9 +39,11 @@ public class HandPrescencePhysics : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.position = target.position;
+        // Apply movement to position but set rotation directly
+        //rb.position = target.position;
+        rb.velocity = (target.position - transform.position) / Time.fixedDeltaTime;
         rb.rotation = target.rotation;
-        rb.velocity = rb.angularVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
 
         /*
         //position
