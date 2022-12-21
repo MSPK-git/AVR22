@@ -43,7 +43,7 @@ public class GameRulesController : MonoBehaviour
     [SerializeField]
     public AudioSource missionCompleteAudio;
 
-    // for testing we have this to accept incomplete bike frames
+    [Tooltip("For testing: accept incomplete bike frames")]
     [SerializeField]
     public bool acceptIncompleteBikes;
 
@@ -86,18 +86,18 @@ public class GameRulesController : MonoBehaviour
                     }
                     else if (result == BikeCheckResult.WrongComponents)
                     {
-                        errorText.SetText("Fahrrad ist nicht vollständig!");
+                        ShowError("Fahrrad ist nicht vollständig!");
                     }
                     else if (result == BikeCheckResult.WrongColor)
                     {
-                        errorText.SetText("Rahmen hat die falsche Farbe!");
+                        ShowError("Rahmen hat die falsche Farbe!");
                     }
                 }
             } else
             {
                 if ((DateTime.UtcNow - completionTime).Seconds > 3)
                 {
-                    errorText.SetText("Kein Fahrrad im Austellungsbereich");
+                    ShowError("Kein Fahrrad im Austellungsbereich");
                 }
             }
         }
@@ -122,6 +122,17 @@ public class GameRulesController : MonoBehaviour
             missionText.SetText("Keine weiteren Kundenaufträge verfügbar - Feierabend!");
             button.gameObject.SetActive(false);
         }
+    }
+
+    void ShowError(string errorMessage)
+    {
+        errorText.SetText(errorMessage);
+        Invoke(nameof(ClearError), 5.0f);
+    }
+
+    void ClearError()
+    {
+        errorText.SetText("");
     }
 
     BikeCheckResult CheckBicycleAttachments(GameObject gameObject)
@@ -178,7 +189,7 @@ public class GameRulesController : MonoBehaviour
         {
             foreach (var interactable in socket.interactablesSelected)
             {
-                Destroy(interactable.transform);
+                Destroy(interactable.transform.gameObject);
             }
         }
         Destroy(gameObject);

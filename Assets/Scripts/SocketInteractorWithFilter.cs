@@ -29,6 +29,7 @@ public class SocketInteractorWithFilter : XRSocketInteractor
 
         if (base.CanSelect(interactable))
         {
+            // Make sure we only interact with the correct interactables
             if (filterTag.Length > 0 && !interactable.transform.CompareTag(filterTag))
             {
                 Debug.Log("CanSelect " + interactable.transform.name + " with tag " + interactable.transform.tag + " FALSE");
@@ -58,12 +59,15 @@ public class SocketInteractorWithFilter : XRSocketInteractor
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
+        bool isInPresentationCube = this.gameObject.name.Equals("presentation_cube");
+
+        // Go troug every socket in our children and enable grabbing when in the dropzone (not the presentation cube)
         foreach (var interactables in interactablesSelected)
         {
             var sockets = interactables.transform.GetComponentsInChildren<SocketInteractorWithFilter>();
             foreach (var socket in sockets)
             {
-                socket.NotifySelect(args.interactableObject);
+                socket.NotifySelect(args.interactableObject, isInPresentationCube);
             }
         }
 
@@ -72,6 +76,7 @@ public class SocketInteractorWithFilter : XRSocketInteractor
 
     protected override void OnSelectExiting(SelectExitEventArgs args)
     {
+        // Go trough every socket in our children and disable hand grabbing when not in the dropzone
         foreach (var interactables in interactablesSelected)
         {
             var sockets = interactables.transform.GetComponentsInChildren<SocketInteractorWithFilter>();
@@ -79,12 +84,19 @@ public class SocketInteractorWithFilter : XRSocketInteractor
             {
                 socket.NotifyExit(args.interactableObject);
             }
+
+            // make sure dropped stuff can always be picked up
+            var myInteractable = interactables.transform.GetComponent<OffsetInteractable>();
+            if (myInteractable != null)
+            {
+                myInteractable.preventHandGrab = false;
+            }
         }
 
         base.OnSelectExiting(args);
     }
 
-    protected void NotifySelect(IXRSelectInteractable interactableObject)
+    protected void NotifySelect(IXRSelectInteractable interactableObject, bool preventHandGrab)
     {
         // Interactable added to socket condition, we can now accept bike parts
         if (interactableObject.Equals(interactableInSocketCondition))
@@ -94,7 +106,7 @@ public class SocketInteractorWithFilter : XRSocketInteractor
                 var myInteractable = interactable.transform.GetComponent<OffsetInteractable>();
                 if (myInteractable != null)
                 {
-                    myInteractable.preventHandGrab = false;
+                    myInteractable.preventHandGrab = preventHandGrab;
                 }
             }
         }
