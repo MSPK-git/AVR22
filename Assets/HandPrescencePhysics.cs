@@ -39,6 +39,11 @@ public class HandPrescencePhysics : MonoBehaviour
 
     void FixedUpdate()
     {
+        rb.position = target.position;
+        rb.rotation = target.rotation;
+        rb.velocity = rb.angularVelocity = Vector3.zero;
+
+        /*
         //position
         rb.velocity = (target.position - transform.position) / Time.fixedDeltaTime;
 
@@ -49,6 +54,6 @@ public class HandPrescencePhysics : MonoBehaviour
         Vector3 rotationDifferenceInDegree = angleInDegree * rotationAxis;
 
         rb.angularVelocity = (rotationDifferenceInDegree * Mathf.Deg2Rad / Time.fixedDeltaTime);
-
+        */
     }
 }
