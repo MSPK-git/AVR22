@@ -187,9 +187,18 @@ public class GameRulesController : MonoBehaviour
 
         foreach (var socket in sockets)
         {
+            // Get all gameobjects and put them into a separate list so we can delete all of them.
+            // We can't delete them while iterating interactablesSelected (deleting while iterating
+            List<GameObject> gameObjects = new List<GameObject>(socket.interactablesSelected.Count);
             foreach (var interactable in socket.interactablesSelected)
             {
-                Destroy(interactable.transform.gameObject);
+                gameObjects.Add(interactable.transform.gameObject);
+            }
+
+            // Delete all gameobjects
+            foreach (var obj in gameObjects)
+            {
+                Destroy(obj);
             }
         }
         Destroy(gameObject);
