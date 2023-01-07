@@ -17,18 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Werkstatt.unity
     guid: c4b070c528e355240a965ad40035a1f7
-  - enabled: 0
-    path: Assets/Simple city plain/scene/Demo Scene.unity
-    guid: 79f8bac4c75da6e43bd8288f7d84106c
-  - enabled: 0
+  - enabled: 1
     path: Assets/POLYGON city pack/scene/DemoScene.unity
     guid: 7759de288f5d4ee449a0ca5e2244944a
-  - enabled: 0
-    path: Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Demo Day.unity
-    guid: 67adac43bcf286444be612074ab04f75
-  - enabled: 1
-    path: Assets/Scenes/Umgebung.unity
-    guid: 07335aef36c194a4f82021756cdfa2b5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
