@@ -14,7 +14,7 @@ public class InitScenes : MonoBehaviour
             SceneManager.LoadScene("Verkauf", LoadSceneMode.Additive);
         SceneManager.LoadScene("Werkstatt", LoadSceneMode.Additive);
         SceneManager.LoadScene("Lager", LoadSceneMode.Additive);
-        SceneManager.LoadScene("DemoScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Umgebung", LoadSceneMode.Additive);
         }
     }
 
