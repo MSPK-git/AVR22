@@ -640,10 +640,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledButton__ctor_mF20F73D26F7D8471161C
 		// public string Text = "";
 		__this->___Text_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Text_0), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		// public float Top = 0;
-		__this->___Top_1 = (0.0f);
-		// public float Down = 0;
-		__this->___Down_2 = (0.0f);
 		// public StyledButton(string Text)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.Text = Text;
@@ -671,10 +667,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledButton__ctor_m30ADC90E15FD3F1A7EE6
 		// public string Text = "";
 		__this->___Text_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Text_0), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		// public float Top = 0;
-		__this->___Top_1 = (0.0f);
-		// public float Down = 0;
-		__this->___Down_2 = (0.0f);
 		// public StyledButton(string Text, float Top, float Down)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.Text = Text;
@@ -812,10 +804,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledEnum__ctor_m0BB365EC501EE35F12A275
 		// public string options = "";
 		__this->___options_2 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___options_2), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		// public int top = 0;
-		__this->___top_3 = 0;
-		// public int down = 0;
-		__this->___down_4 = 0;
 		// public StyledEnum(string file, string options, int top, int down)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.file = file;
@@ -855,10 +843,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledEnum__ctor_m9A9CE08D24585451394C01
 		// public string options = "";
 		__this->___options_2 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___options_2), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		// public int top = 0;
-		__this->___top_3 = 0;
-		// public int down = 0;
-		__this->___down_4 = 0;
 		// public StyledEnum(string display, string file, string options, int top, int down)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.display = display;
@@ -999,10 +983,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledMask__ctor_mDFE18945F0D13596BC814C
 		// public string options = "";
 		__this->___options_2 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___options_2), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		// public int top = 0;
-		__this->___top_3 = 0;
-		// public int down = 0;
-		__this->___down_4 = 0;
 		// public StyledMask(string file, string options, int top, int down)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.file = file;
@@ -1042,10 +1022,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledMask__ctor_m16C20A4AAFD092BD2B9103
 		// public string options = "";
 		__this->___options_2 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___options_2), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		// public int top = 0;
-		__this->___top_3 = 0;
-		// public int down = 0;
-		__this->___down_4 = 0;
 		// public StyledMask(string display, string file, string options, int top, int down)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.display = display;
@@ -1200,10 +1176,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledText__ctor_mB8D1A97A3AC3A6BA5C7AC4
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___text_0), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public TextAnchor alignment = TextAnchor.MiddleCenter;
 		__this->___alignment_1 = 4;
-		// public float top = 0;
-		__this->___top_2 = (0.0f);
-		// public float down = 0;
-		__this->___down_3 = (0.0f);
 		// public StyledText()
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// }
@@ -1225,10 +1197,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledText__ctor_m551C922D9B4487646AB9A1
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___text_0), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public TextAnchor alignment = TextAnchor.MiddleCenter;
 		__this->___alignment_1 = 4;
-		// public float top = 0;
-		__this->___top_2 = (0.0f);
-		// public float down = 0;
-		__this->___down_3 = (0.0f);
 		// public StyledText(TextAnchor alignment)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.alignment = alignment;
@@ -1253,10 +1221,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyledText__ctor_mEC668FA735717798B07FBC
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___text_0), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public TextAnchor alignment = TextAnchor.MiddleCenter;
 		__this->___alignment_1 = 4;
-		// public float top = 0;
-		__this->___top_2 = (0.0f);
-		// public float down = 0;
-		__this->___down_3 = (0.0f);
 		// public StyledText(TextAnchor alignment, float top, float down)
 		PropertyAttribute__ctor_m19247686E165101F140615C7306DC2DA3953D97D(__this, NULL);
 		// this.alignment = alignment;
